@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CUDA C++: Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gpu_code/cuda/executest",
+            "args": [
+                "-d", "7",
+                "-t", "2",
+                "-s", "0",
+                "-q", "0",
+                "-r", "1",
+                "-1", "256",
+                "-2", "64"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "environment": [],
+            "preLaunchTask": "build cuda project",
+        },
+        {
+            "name": "CUDA C++: cuda-gdb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/gpu_code/cuda/executest",
+            "args": [
+                "-d", "3",
+                "-t", "2",
+                "-s", "0",
+                "-q", "0",
+                "-r", "1",
+                "-1", "256",
+                "-2", "64"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/local/cuda-11.7/bin/cuda-gdb",
+            "environment": [],
+            "preLaunchTask": "build cuda project",
+        }
+    ]
+}
