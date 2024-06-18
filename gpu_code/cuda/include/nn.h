@@ -5,6 +5,9 @@
 #include "functions.h"
 #include "io_functions.h"
 
+#include <stdlib.h>
+#include <iostream>
+
 class NN
 {
 	public:
@@ -286,6 +289,10 @@ class NN
 				for(unsigned i_batch = 0; i_batch < BATCH_SIZE; i_batch++)
 					ler_count += (sc->h_targets[i_batch] == h_outputs[i_batch] ? 0.0f : 1.0f);	
 			}
+
+			std::cout << "DISTANCE: " << DISTANCE << "    " << "PER: " << PER << "    " << "OK." << std::endl;
+			exit(0);
+
 			ler = (float)(ler_count)/(float)(BATCH_SIZE *  RUN_MAX);
 			printf("%d: %.12f\t%.12f\n",i_train,PER,ler);
 

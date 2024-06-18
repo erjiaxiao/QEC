@@ -51,10 +51,10 @@
 #define RUN_MAX 2000
 #define TRAIN_MAX 150
 
-#define P_TRAIN_3 0.10000
-#define P_TRAIN_5 0.10000
-#define P_TRAIN_7 0.10000
-#define P_TRAIN_9 0.10000
+#define P_TRAIN_3 0.08234
+#define P_TRAIN_5 0.10343
+#define P_TRAIN_7 0.11366
+#define P_TRAIN_9 0.11932 
 
 // RNG defines
 #define SEED 0 // *

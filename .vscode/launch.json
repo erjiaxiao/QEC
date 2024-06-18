@@ -7,7 +7,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/gpu_code/cuda/executest",
             "args": [
-                "-d", "7",
+                "-d", "3",
                 "-t", "2",
                 "-s", "0",
                 "-q", "0",
