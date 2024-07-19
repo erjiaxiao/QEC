@@ -6,3 +6,6 @@ executest
 ancillas.txt
 labels.txt
 pure.txt
+
+time_pure_function_raw
+time_pure_function_vector
